@@ -1,7 +1,8 @@
 .burger > img {
-    width: 20px;
+    width: 40px;
     height: auto;
     background-color: #839B97;
+    filter: invert(100%);
     padding: 10px;
     border-radius: 10px 0 10px 0;
 }
@@ -10,5 +11,5 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 3;
+    z-index: 2;
 }

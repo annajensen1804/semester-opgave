@@ -2,11 +2,15 @@ const headerContainer = document.querySelector(".header-container");
 
 const frontpageHeroTmpl = () => {
   return `
+
+  <div class="header">
         <img src="../assets/images/heros/forside.jpg" alt="heroImage" class="hero-image">
+
+        <div class="overlay"></div>
 
         <div class="frontText">
         
-            <img src="../assets/images/logo/logo.png" alt="logo">
+            <img src="../assets/images/logo/logo.png" alt="logo" class="logo">
         
             <h2>Gittes</h2>
             <h1>Glamping</h1>
@@ -14,6 +18,8 @@ const frontpageHeroTmpl = () => {
             <button class="btnFrontpage">Book nu</button>
 
         </div>
+
+    <header/>
     `;
 };
 

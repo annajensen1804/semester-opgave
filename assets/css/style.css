@@ -1,2 +1,23 @@
 @import "forsideHero.css";
 @import "nav.css";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop:ital@0;1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Zen Loop", cursive;
+    color: white;
+}
+
+p {
+    font-family: "Nanum Gothic", sans-serif;
+    color: white;
+}
