@@ -1,4 +1,4 @@
-.burger > img {
+.burger img {
     width: 40px;
     height: auto;
     background-color: #839B97;
@@ -13,5 +13,37 @@
     right: 20px;
     z-index: 2;
     cursor: pointer;
+}
+
+.nav-list {
+    display: none;
+    list-style-type: none;
+    background-color: #849B97;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    padding: 20px;
+    flex-direction: column;
+    z-index: 5;
+    font-family: "Zen Loop", cursive;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.nav-list.show {
+    display: flex;
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background: #666;
 }
 
