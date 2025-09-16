@@ -15,7 +15,7 @@ const frontpageHeroTmpl = () => {
             <h2>Gittes</h2>
             <h1>Glamping</h1>
 
-            <button class="btnFrontpage">Book nu</button>
+            <button class="btnFrontpage">BOOK NU</button>
 
         </div>
 
