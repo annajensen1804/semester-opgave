@@ -2,9 +2,7 @@ const headerContainer = document.querySelector(".header-container");
 
 const frontpageHeroTmpl = () => {
   return `
-        <img src="../assets/images/heros/forside.jpg" alt="heroImage">
-       
-        <img src="../assets/images/icons/bars-solid.svg" alt="menu">
+        <img src="../assets/images/heros/forside.jpg" alt="heroImage" class="hero-image">
 
         <div class="frontText">
         

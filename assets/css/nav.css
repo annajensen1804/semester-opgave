@@ -1,0 +1,14 @@
+.burger > img {
+    width: 20px;
+    height: auto;
+    background-color: #839B97;
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+}
+
+.burger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
