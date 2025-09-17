@@ -20,11 +20,11 @@ const opholdListTmpl = (opholdData) => {
 
    return `
 <article>
-    <h3></h3>
-    <p></p>
-    <p></p>
-    <img src="" alt="">
+    <h3>${opholdData.title}</h3>
+    <p>${opholdData.numberOfPersons}</p>
+    <p>${opholdData.price}</p>
+    </article>
+    <img src="${opholdData.image}" alt="">
     <button></button>
-</article>
     `
 } 
