@@ -13,5 +13,5 @@ at fordybe dig i naturen og nyde luksus i det fri. Vi ser frem til at byde dig v
 til en oplevelse fyldt med komfort, eventyr og skønhed.
 </p>
 </article>
-  `;
+`;
 };
