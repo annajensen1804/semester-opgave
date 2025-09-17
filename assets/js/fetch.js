@@ -2,7 +2,7 @@ export async function fetchReviews() {
   try {
     const response = await fetch("https://glamping-rqu9j.ondigitalocean.app/reviews/");
     const data = await response.json();
-    return data;
+    return data.data;
   } catch (error) {
     console.error("Error fetching or parsing data:", error);
   }

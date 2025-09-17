@@ -2,8 +2,9 @@ const opholdTextbox = document.querySelector(".opholdTextbox")
 
 
 export const Textbox = () => {
-  const header = document.querySelector(".opholdTextbox");
-  header.innerHTML = `
+  if (opholdTextbox) {        /* Har tilføjet */
+    const header = document.querySelector(".opholdTextbox");
+    header.innerHTML = `
    <article>
 <h2>Vi har ophold til enhver smag</h2>
 <p>Vores glampingophold er skabt til at tilbyde en kombination af eventyr og afslapning.
@@ -14,4 +15,6 @@ til en oplevelse fyldt med komfort, eventyr og skønhed.
 </p>
 </article>
 `;
-};
+  }
+  }
+ 
