@@ -1,0 +1,34 @@
+.frontpage-text {
+    position: relative;
+    background-color: #CFD3CE;
+}
+
+.innerFrontpageText {
+    position: absolute;
+    top: -10rem;
+    background-color: #34626C;
+    border-radius: 70px 0 70px 0;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.gitte {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.frontpageTextBtn {
+    padding: 30px 50px;
+    background-color: #839B97;
+    border-radius: 70px 0 70px 0;
+    font-family: "Zen Loop", cursive;
+    font-size: 30px;
+    color: white;
+}
