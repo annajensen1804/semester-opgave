@@ -26,8 +26,10 @@ export const nav = () => {
       navUl.classList.toggle("show");
     });
 
-    navUl.addEventListener('click', () => {
-        navUl.classList.remove('show')  
+    document.addEventListener('click', (event) => {
+        if(!burgerBtn.contains(event.target) && !navUl.contains(event.target)) {
+            navUl.classList.remove("show");
+        }     
 })}
 };
 
