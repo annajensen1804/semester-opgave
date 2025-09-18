@@ -10,6 +10,6 @@ import { Textbox } from "./comp/opholdTextbox.js";
 frontpageHero()
 nav()
 frontpageText()
-frontpageReview()
+frontpageReview();
 opholdHeader()
 Textbox()
