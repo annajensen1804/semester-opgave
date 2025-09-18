@@ -1,12 +1,12 @@
 .frontpage-review {
     margin-top: 100vh;
     background-color: #CFD3CE;
-    padding: 30px;
+    padding: 100px 30px;
 }
 
 
 .h2-rev {
-    font-size: clamp(5rem, 4.1197rem + 3.7559vw, 7.5rem);
+    font-size: clamp(5rem, 4.7799rem + 0.939vw, 5.625rem);
     background-color: #C6B497;
     border-radius: 70px 0 70px 0;
     padding: 20px 30px;
@@ -16,7 +16,7 @@
 .innerFrontpageReview {
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 20px 30px 60px 30px;
     border-radius: 70px 0 70px 0;
     background-color: #839B97;
     margin: 40px 0;
