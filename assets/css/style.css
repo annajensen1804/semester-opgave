@@ -2,6 +2,7 @@
 @import "nav.css";
 @import "forsideText.css";
 @import "forsideReview.css";
+@import "footer.css";
 
 
 
@@ -31,4 +32,8 @@ p {
     font-family: "Nanum Gothic", sans-serif;
     color: white;
     font-size: clamp(1rem, 0.6919rem + 1.3146vw, 1.875rem);
+}
+
+a {
+    text-decoration: none;
 }

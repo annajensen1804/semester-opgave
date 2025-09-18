@@ -4,6 +4,7 @@ import { frontpageText } from "./comp/forsideText.js";
 import { frontpageReview } from "./comp/forsideReview.js";
 import { opholdHeader } from "./comp/opholdHeader.js";
 import { Textbox } from "./comp/opholdTextbox.js";
+import { footer } from "./comp/footer.js";
 
 
 
@@ -13,3 +14,4 @@ frontpageText()
 frontpageReview();
 opholdHeader()
 Textbox()
+footer()

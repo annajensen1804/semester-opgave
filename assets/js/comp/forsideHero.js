@@ -3,7 +3,7 @@ const headerContainer = document.querySelector(".header-container");
 const frontpageHeroTmpl = () => {
   return `
 
-  <div class="header">
+  <div class="header" id="top">
         <img src="../assets/images/heros/forside.jpg" alt="heroImage" class="hero-image">
 
         <div class="overlay"></div>
