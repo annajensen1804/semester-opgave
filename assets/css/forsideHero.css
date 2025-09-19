@@ -29,17 +29,21 @@
     height: auto;
 }
 
-h1 {
+.h1-small {
+    margin-top: 30px;
+    font-size: clamp(1.75rem, -0.2746rem + 8.6385vw, 7.5rem);
+}
+
+.h1-big {
+    font-size: clamp(3.125rem, -0.1761rem + 14.0845vw, 12.5rem);
     letter-spacing: 5px;
     margin-bottom: 30px;
 }
 
-h2 {margin-top: 30px;}
-
 .btnFrontpage {
     padding: 30px 60px;
     font-family: "Zen Loop", cursive;
-    font-size: 50px;
+    font-size: 45px;
     color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid white;
@@ -49,4 +53,26 @@ h2 {margin-top: 30px;}
 
 .btnFrontpage:hover {
     background-color: rgba(255, 255, 255, 0.392);
+}
+
+@media(min-width: 768px) {
+    .hero-image {
+        height: 80vh;
+    }
+
+    .frontText {
+        top: 35%;
+        left: 50%;
+    }
+
+    .name {
+        display: flex;
+        gap: 20px;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .h1-big, .h1-small {
+        font-size: clamp(5rem, 4.5599rem + 1.8779vw, 6.25rem);
+    }
 }

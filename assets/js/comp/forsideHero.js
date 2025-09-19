@@ -12,8 +12,10 @@ const frontpageHeroTmpl = () => {
         
             <img src="../assets/images/logo/logo.png" alt="logo" class="logo">
         
-            <h2>Gittes</h2>
-            <h1>Glamping</h1>
+            <div class="name">
+              <h1 class="h1-small">Gittes</h1>
+              <h1 class="h1-big">Glamping</h1>
+            </div>
 
             <button class="btnFrontpage">BOOK NU</button>
 

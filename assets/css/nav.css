@@ -47,3 +47,17 @@
     background: #666;
 }
 
+@media(min-width: 768px) {
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 7vh;
+        align-items: center;
+        background-color: #849b97b1;
+    }
+
+    .burger {
+        display: none;
+    }
+}

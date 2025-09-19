@@ -5,7 +5,6 @@ console.log(reviews);
 
 const frontpageReviewContainer = document.querySelector(".frontpage-review");
 
-/* frontpageReviewContainer.innerHTML = `<div class="background"></div>;`; */
 frontpageReviewContainer.innerHTML = `<h2 class="h2-rev">Vores gæster udtaler</h2>`;
 
 
