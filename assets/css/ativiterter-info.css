@@ -1,0 +1,35 @@
+/* ---------- GENERELT ---------- */
+:root{
+  --beige:#d5bc9c;
+  --teal:#2e646e;
+  --ink:#f0f3f2;
+  --text:#e6ece9;
+  --shadow:0 8px 24px rgba(0,0,0,.15);
+}
+img{display:block;width:100%;height:auto}
+
+/* ---------- INFO-BOKS (activitiesInfo) ---------- */
+.activities-info {
+  margin: -36px 16px 18px;
+}
+.activities-info-box{
+  background:var(--teal);
+  color:var(--text);
+  padding:18px 18px 22px;
+  border-radius:24px 24px 0 60px;
+  box-shadow:var(--shadow);
+}
+.activities-info-box h2{
+  font-family:"Amatic SC", cursive;
+  font-size:48px;
+  margin-bottom:12px;
+}
+.activities-info-box p{
+  line-height:1.45;
+  font-size:14px;
+  opacity:.9;
+}
+
+@media (min-width: 768px){
+  .activities-info { margin:-48px auto 24px; max-width:900px; }
+}

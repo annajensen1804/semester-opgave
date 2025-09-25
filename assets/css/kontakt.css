@@ -1,0 +1,88 @@
+/* Farver + basis */
+:root{
+  --teal: #35666c;
+  --teal-dark: #2b5257;
+  --text: #e9f1f2;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background: var(--teal);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.container{width:min(100%,420px);margin:0 auto;padding:0 16px}
+
+/* HERO */
+.hero{
+  position: relative;
+  height: 320px;
+  background: url("../img/hero-glamping.jpg") center/cover no-repeat; /* <- byt til dit billede */
+}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 12px;
+}
+.logo{width:36px;height:36px;object-fit:contain}
+.burger{
+  border:0;background:rgba(0,0,0,.35);color:#fff;border-radius:8px;
+  width:36px;height:36px;font-size:18px;line-height:36px
+}
+.hero-title{
+  position:absolute;inset:0;display:grid;place-items:center;
+  margin:0;
+  font-family:"Zen Loop", cursive;
+  font-weight:400;
+  font-size: clamp(44px, 9vw, 68px);
+  text-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+.hero-fade{
+  position:absolute;left:0;right:0;bottom:0;height:110px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(53,102,108,.35) 60%, var(--teal) 100%);
+}
+
+/* CTA-blok */
+.cta{
+  background: var(--teal);
+  margin-top: -20px;
+  padding: 20px 16px 6px;
+  border-top-left-radius: 70px;
+}
+.cta-title{
+  margin: 6px 0 12px;
+  font-family:"Zen Loop", cursive;
+  font-weight:400;
+  font-size: clamp(34px, 7.5vw, 48px);
+  line-height:1.05;
+}
+.cta-title span{display:block}
+.cta-text{font-size:12px;opacity:.95;margin:0 0 6px}
+
+/* FORM */
+.form{display:grid;gap:12px;padding:10px 0 32px}
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  border:2px solid rgba(255,255,255,.55);
+  background: transparent;
+  color: var(--text);
+  border-radius: 16px;
+  padding: 10px 14px;
+  font-size: 15px;
+  outline: none;
+}
+.field textarea{min-height:140px}
+
+.btn{
+  border:0;
+  padding:12px 24px;
+  border-radius: 26px;
+  background: var(--teal-dark);
+  color:#fff;
+  letter-spacing:.06em;
+}
+.btn:active{transform:translateY(1px)}

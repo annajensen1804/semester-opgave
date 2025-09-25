@@ -3,7 +3,9 @@
 @import "forsideText.css";
 @import "forsideReview.css";
 @import "footer.css";
-
+@import "aktivitetrer.css";
+@import "ativiterter-info.css";
+@import "kontakt.css";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop:ital@0;1&display=swap');

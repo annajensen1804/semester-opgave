@@ -1,0 +1,101 @@
+/* ---------- AKTIVITETER (kort) ---------- */
+.activities-list{
+  display:grid;
+  gap:48px;
+  padding:12px 16px 80px;
+}
+
+/* selve kortet */
+.activity-card{ position:relative; }
+
+/* top-billede */
+.image-wrap{
+  overflow:hidden;
+  border-radius:18px;
+  box-shadow:var(--shadow);
+}
+
+/* beige titel-flag */
+.title-flag{
+  position:absolute;
+  top:-22px; left:12px;
+  background:var(--beige); color:#fff;
+  min-width:200px;
+  padding:14px 18px;
+  font-family:"Amatic SC", cursive;
+  font-size:40px;
+  border-radius:24px 60px 24px 24px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+
+/* teal info-boks under billedet */
+.info-box{
+  position:relative;
+  margin:-28px 14px 0;
+  background:var(--teal);
+  color:var(--ink);
+  padding:18px;
+  border-radius:24px 24px 60px 24px;
+  box-shadow:var(--shadow);
+}
+
+/* spejlvendt hver 2. kort */
+.activity-card.reverse .title-flag{
+  left:auto; right:12px;
+  border-radius:24px 24px 60px 24px;
+}
+.activity-card.reverse .info-box{
+  margin-left:auto;
+  border-radius:60px 24px 24px 24px;
+}
+
+/* meta (dato/tid) */
+.meta{
+  opacity:.85;
+  font-size:14px;
+  margin-bottom:12px;
+  white-space:pre-line; /* bevarer linjeskift */
+}
+
+/* like-knap (❤) */
+.like{
+  position:absolute;
+  top:14px; right:14px;
+  border:0; cursor:pointer;
+  width:44px; height:40px;
+  border-radius:10px;
+  background:#ffffff38;
+}
+.like.liked{ background:#ffffffb5; }
+.like span{
+  display:block;
+  font-size:20px;
+  line-height:40px;
+  text-align:center;
+  color:#fff;
+}
+
+/* dropdown-knap + indhold */
+.read-more-btn{
+  width:100%;
+  background:transparent;
+  color:#e9f4f3;
+  border:2px solid #9cc3c7;
+  padding:10px 16px;
+  border-radius:18px;
+  cursor:pointer;
+  font-weight:500;
+}
+.dropdown-content{ display:none; margin-top:10px; opacity:.9; line-height:1.45; }
+.dropdown-content.open{ display:block; }
+
+/* pil rotation */
+.dropdown-arrow{ display:inline-block; transition:transform .2s ease; }
+.dropdown-arrow.open{ transform:rotate(180deg); }
+
+/* ---------- små forbedringer på større skærme ---------- */
+@media (min-width: 768px){
+  .activities-info { margin:-48px auto 24px; max-width:900px; }
+  .activities-list { max-width:900px; margin:0 auto; }
+}
