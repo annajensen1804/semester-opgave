@@ -1,15 +1,34 @@
 export const wireDrop = (container) => {
   if (!container) return;
 
+  // Finder alle elementer på siden der har klassen "read-more-btn"
+  // (det er de knapper man kan klikke på for at vise/skjule indhold)
   container.querySelectorAll(".read-more-btn").forEach((btn) => {
+
+    // Tilføjer en klik-hændelse til hver knap
     btn.addEventListener("click", () => {
+      // Finder den nærmeste forælder med klassen "info-box"
+      // (så vi kun påvirker indholdet i den boks, hvor knappen blev klikket)
       const box = btn.closest(".info-box");
+
+      // Finder det skjulte indhold inde i boksen
       const content = box.querySelector(".dropdown-content");
+
+      // Finder pilen inde i knappen
       const arrow = btn.querySelector(".dropdown-arrow");
+
+      // Tjekker om indholdet allerede har klassen "open" (dvs. om det er åbent)
       const open = content.classList.contains("open");
 
+      // Hvis indholdet er lukket, tilføjes klassen "open" (så det åbnes).
+      // Hvis det er åbent, fjernes klassen "open" (så det lukkes).
       content.classList.toggle("open", !open);
+
+      // Gør præcis det samme med pilen, så dens udseende passer til om indholdet er åbent eller lukket
       arrow.classList.toggle("open", !open);
+      
+      // Fjerner markeringen/fokus fra knappen efter klik,
+      // så den ikke står med en blå ramme eller highlight bagefter
       btn.blur();
     });
   });
