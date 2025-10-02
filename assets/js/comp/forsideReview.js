@@ -5,7 +5,7 @@ console.log(reviews);
 
 const frontpageReviewContainer = document.querySelector(".frontpage-review");
 
-frontpageReviewContainer.innerHTML = `<h2 class="h2-rev">Vores gæster udtaler</h2>`;
+
 
 
 const frontpageReviewTmpl = (rev) => {
@@ -20,6 +20,7 @@ const frontpageReviewTmpl = (rev) => {
 
 export const frontpageReview = () => {
   if (frontpageReviewContainer) {
+    frontpageReviewContainer.innerHTML = `<h2 class="h2-rev">Vores gæster udtaler</h2>`;
     reviews.forEach((element) => {
       frontpageReviewContainer.insertAdjacentHTML("beforeend", frontpageReviewTmpl(element));
     });
